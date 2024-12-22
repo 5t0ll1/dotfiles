@@ -16,7 +16,8 @@ set $mod Mod4
 font pango:MesloLGS Nerd Font Mono Bold 12
 
 exec --no-startup-id picom
-exec --no-startup-id feh --bg-scale ~/.config/backgrounds/nice-blue-background.png
+#exec --no-startup-id feh --bg-scale ~/.config/backgrounds/nice-blue-background.png
+exec --no-startup-id feh --bg-fill --scale-down ~/.config/backgrounds/'ktm-890-adv-r-rallymy24.jpeg'
 
 # kill any hanging polybar processes
 exec_always killall polybar
@@ -26,6 +27,12 @@ exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+space exec --no-startup-id rofi -show combi
 bindsym $mod+Tab exec --no-startup-id rofi -show window
+
+# auto start Enpass
+exec --no-startup-id /opt/enpass/Enpass -minimize
+
+# auto start Vorta
+exec --no-startup-id vorta
 
 # floating applications
 for_window [class="Enpass" instance="Enpass"] floating enable
