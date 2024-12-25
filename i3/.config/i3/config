@@ -22,6 +22,8 @@ bindsym $mod+Tab exec --no-startup-id rofi -show window
 # floating applications
 for_window [class="Enpass" instance="Enpass"] floating enable
 for_window [class="Vorta" instance="vorta"] floating enable
+for_window [class="Insync" instance="Insync"] floating enable
+for_window [class="Xdg-desktop-portal-gtk" instance="xdg-desktop-portal-gtk"] floating enable, move absolute position 10 10, resize set 640 480
 
 # Start XDG autostart .desktop files using dex. See also
 exec --no-startup-id dex --autostart --environment i3
@@ -34,6 +36,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id /opt/enpass/Enpass -minimize
 exec --no-startup-id vorta
+exec --no-startup-id insync start
 
 # use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
