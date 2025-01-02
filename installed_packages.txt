@@ -76,3 +76,4 @@ yay-debug
 zram-generator
 zsh
 blueman
+stow
