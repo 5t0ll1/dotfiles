@@ -75,3 +75,4 @@ yay
 yay-debug
 zram-generator
 zsh
+blueman
