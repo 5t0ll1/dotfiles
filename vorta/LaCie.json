@@ -1,0 +1,238 @@
+{
+    "id": 1,
+    "name": "LaCie",
+    "added_at": "2024-12-15 18:32:43.031857",
+    "repo": {
+        "url": "/run/media/stolli/LaCie/Backup",
+        "name": "Backup-x1carbon",
+        "added_at": "2024-12-15 18:46:09.441771",
+        "encryption": "repokey-blake2",
+        "unique_size": 831346724323,
+        "unique_csize": null,
+        "total_size": 2100714103120,
+        "total_unique_chunks": 442614,
+        "create_backup_cmd": "",
+        "extra_borg_arguments": ""
+    },
+    "ssh_key": null,
+    "compression": "lz4",
+    "exclude_patterns": null,
+    "exclude_if_present": "[] .nobackup\n[] CACHEDIR.TAG",
+    "schedule_mode": "off",
+    "schedule_interval_count": 1,
+    "schedule_interval_unit": "weeks",
+    "schedule_fixed_hour": 3,
+    "schedule_fixed_minute": 42,
+    "schedule_interval_hours": 3,
+    "schedule_interval_minutes": 42,
+    "schedule_make_up_missed": false,
+    "validation_on": true,
+    "validation_weeks": 3,
+    "compaction_on": true,
+    "compaction_weeks": 3,
+    "prune_on": true,
+    "prune_hour": 2,
+    "prune_day": 7,
+    "prune_week": 4,
+    "prune_month": 6,
+    "prune_year": 2,
+    "prune_keep_within": "10H",
+    "new_archive_name": "{hostname}-{now:%Y-%m-%d-%H%M%S}",
+    "prune_prefix": "{hostname}-",
+    "pre_backup_cmd": "",
+    "post_backup_cmd": "",
+    "dont_run_on_metered_networks": true,
+    "SourceFileModel": [
+        {
+            "dir": "/home/stolli",
+            "dir_size": 267191709786,
+            "dir_files_count": 64520,
+            "path_isdir": true,
+            "profile": 1,
+            "added_at": "2024-12-15 17:46:31.134543"
+        }
+    ],
+    "SchemaVersion": {
+        "id": 1,
+        "version": 23,
+        "changed_at": "2024-12-15 18:32:42.547506"
+    },
+    "WifiSettingModel": [
+        {
+            "id": 1,
+            "ssid": "JARVIS",
+            "last_connected": "2025-01-02 08:08:09",
+            "allowed": true,
+            "profile": 1
+        },
+        {
+            "id": 4,
+            "ssid": "FRITZ!Box 7590 DX",
+            "last_connected": "2024-12-21 21:10:20",
+            "allowed": true,
+            "profile": 1
+        },
+        {
+            "id": 5,
+            "ssid": "Hyggus1234_5G",
+            "last_connected": "2025-01-01 00:08:55",
+            "allowed": true,
+            "profile": 1
+        }
+    ],
+    "SettingsModel": [
+        {
+            "key": "enable_notifications",
+            "value": true,
+            "str_value": "",
+            "label": "Display notifications when background tasks fail",
+            "group": "Notifications",
+            "tooltip": "",
+            "type": "checkbox"
+        },
+        {
+            "key": "enable_notifications_success",
+            "value": false,
+            "str_value": "",
+            "label": "Notify about successful background tasks",
+            "group": "Notifications",
+            "tooltip": "",
+            "type": "checkbox"
+        },
+        {
+            "key": "autostart",
+            "value": true,
+            "str_value": "",
+            "label": "Automatically start Vorta at login",
+            "group": "Startup",
+            "tooltip": "Add Vorta to the systems autostart list",
+            "type": "checkbox"
+        },
+        {
+            "key": "foreground",
+            "value": false,
+            "str_value": "",
+            "label": "Show main window of Vorta on launch",
+            "group": "Startup",
+            "tooltip": "Make Vorta appear on screen instead of minimizing to system tray",
+            "type": "checkbox"
+        },
+        {
+            "key": "get_srcpath_datasize",
+            "value": true,
+            "str_value": "",
+            "label": "Get statistics of file/folder when added",
+            "group": "Information",
+            "tooltip": "When adding a new source, calculate its size and the number of files.",
+            "type": "checkbox"
+        },
+        {
+            "key": "enable_fixed_units",
+            "value": false,
+            "str_value": "",
+            "label": "Use the same unit of measurement for archive sizes",
+            "group": "Information",
+            "tooltip": "When enabled, all archive sizes will use the same unit of measurement, such as  KB or MB. This can make archive sizes easier to compare.",
+            "type": "checkbox"
+        },
+        {
+            "key": "use_system_keyring",
+            "value": true,
+            "str_value": "",
+            "label": "Store repository passwords in system keychain, if available",
+            "group": "Security",
+            "tooltip": "Otherwise Vorta's configuration database stores the password in plaintext.",
+            "type": "checkbox"
+        },
+        {
+            "key": "override_mount_permissions",
+            "value": true,
+            "str_value": "",
+            "label": "Try to replace file permissions when mounting an archive",
+            "group": "Security",
+            "tooltip": "Set owner to current user and umask to 0277",
+            "type": "checkbox"
+        },
+        {
+            "key": "previous_profile_id",
+            "value": false,
+            "str_value": "1",
+            "label": "Previously selected profile",
+            "group": "",
+            "tooltip": "",
+            "type": "internal"
+        },
+        {
+            "key": "previous_window_width",
+            "value": false,
+            "str_value": "1000",
+            "label": "Previous window width",
+            "group": "",
+            "tooltip": "",
+            "type": "internal"
+        },
+        {
+            "key": "previous_window_height",
+            "value": false,
+            "str_value": "637",
+            "label": "Previous window height",
+            "group": "",
+            "tooltip": "",
+            "type": "internal"
+        },
+        {
+            "key": "diff_files_display_mode",
+            "value": false,
+            "str_value": "0",
+            "label": "Diff dialog display mode",
+            "group": "",
+            "tooltip": "",
+            "type": "internal"
+        },
+        {
+            "key": "extract_files_display_mode",
+            "value": false,
+            "str_value": "0",
+            "label": "Extract dialog display mode",
+            "group": "",
+            "tooltip": "",
+            "type": "internal"
+        },
+        {
+            "key": "sourcetab_sort_column",
+            "value": false,
+            "str_value": "0",
+            "label": "Source Tab Sort Column",
+            "group": "",
+            "tooltip": "",
+            "type": "internal"
+        },
+        {
+            "key": "sourcetab_sort_order",
+            "value": false,
+            "str_value": "0",
+            "label": "Source Tab Sort Order",
+            "group": "",
+            "tooltip": "",
+            "type": "internal"
+        },
+        {
+            "key": "enable_background_question",
+            "value": true,
+            "str_value": "",
+            "label": "If the system tray isn't available, ask whether to continue in the background on exit",
+            "group": "",
+            "tooltip": "",
+            "type": "checkbox"
+        },
+        {
+            "key": "disable_background_state",
+            "value": true,
+            "str_value": "",
+            "label": "Previous background exit button state",
+            "group": "",
+            "tooltip": "",
+            "type": "internal"
+        }
+    ]
+}
