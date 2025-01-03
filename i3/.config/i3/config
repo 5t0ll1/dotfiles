@@ -221,3 +221,13 @@ client.unfocused         $overlay0 $base  $text    $rosewater $overlay0
 client.urgent            $peach    $base  $peach   $overlay0  $peach
 client.placeholder       $overlay0 $base  $text    $overlay0  $overlay0
 client.background        $base
+
+##
+## i3-gaps
+##
+
+# Run i3-gaps instead of i3 by default
+# i3-gaps will have black bar on top if you have description borders
+for_window [class="^.*"] border pixel 0
+gaps inner 10
+gaps outer 0

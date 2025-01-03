@@ -3,7 +3,7 @@
     "name": "ds-dahoam",
     "added_at": "2024-12-15 20:13:42.350014",
     "repo": {
-        "url": "ssh://borg-backup@192.168.1.2:6666/volume1/backup/x1carbon",
+        "url": "ssh://borg-backup@ds-dahoam:6666/volume1/backup/x1carbon",
         "name": "",
         "added_at": "2025-01-02 09:30:47.014224",
         "encryption": "repokey-blake2",

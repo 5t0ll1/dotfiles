@@ -77,3 +77,4 @@ zram-generator
 zsh
 blueman
 stow
+gzip
